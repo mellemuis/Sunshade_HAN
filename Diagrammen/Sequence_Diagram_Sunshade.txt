@@ -1,0 +1,31 @@
+@startuml
+actor Sunshade    
+participant Motor
+participant UVsensor
+participant Sensor_inside
+participant Sensor_outside
+actor UVindex
+actor Lightintensity
+actor Rainfall
+actor Wind
+actor User
+       
+
+Sunshade <- Motor: Checkposition()
+Motor -> Sunshade: Rotate()
+
+UVsensor -> UVindex: MeasureUVindex(int)
+UVsensor --> Motor: PassUVindex(int)
+
+
+Sensor_outside -> Lightintensity: Measurelightintensity(int)
+Sensor_outside --> Motor: PasslightIntensity(int)
+Sensor_outside -> Lightintensity: MeasureRainfall(int)
+Sensor_outside --> Motor: Passrainfall(int)
+Sensor_outside -> Wind: Measurewind(int)
+Sensor_outside --> Motor: Passwind(int)
+
+User -> Sensor_inside: SetroomTemperature(int)
+Sensor_inside --> Motor: PassroomTemperature(int)
+
+@enduml

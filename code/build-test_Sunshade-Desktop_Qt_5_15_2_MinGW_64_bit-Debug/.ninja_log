@@ -1,0 +1,8 @@
+# ninja log v5
+3	294	6934978872968284	CMakeFiles/test_Sunshade.dir/main.cpp.obj	2376f6592401f577
+3	304	6938616553063704	CMakeFiles/Test_Sunshade.dir/main.cpp.obj	2448bc0fff734e35
+294	437	6934978874372413	test_Sunshade.exe	53be0a043f6bf36d
+305	379	6938616553786792	Test_Sunshade.exe	c67a9b08c09eaf55
+3	322	6939225924547362	CMakeFiles/Test_Sunshade.dir/main.cpp.obj	2448bc0fff734e35
+7	362	6939225924947977	CMakeFiles/Test_Sunshade.dir/sunshade_test.cpp.obj	79627ace1fd53b62
+362	537	6939225926667814	Test_Sunshade.exe	c2530faa5f963543
